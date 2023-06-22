@@ -1,3 +1,4 @@
+import 'package:ecommareice/screens/completProfile.dart';
 import 'package:flutter/material.dart';
 
 class registerPage extends StatefulWidget {
@@ -128,8 +129,8 @@ class _registerPageState extends State<registerPage> {
             ),
             MaterialButton(
               onPressed: () {
-                // Navigator.push(context,
-                //     MaterialPageRoute(builder: (context) => ()));
+                Navigator.push(context,
+                    MaterialPageRoute(builder: (context) => Comletprofile()));
               },
               shape: StadiumBorder(),
               color: Color.fromARGB(255, 255, 102, 0),
