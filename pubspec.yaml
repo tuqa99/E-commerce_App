@@ -39,7 +39,7 @@ dependencies:
   banner_carousel:
   lottie: ^2.3.2
   smooth_page_indicator: ^1.1.0
-
+  badges:
 dev_dependencies:
   flutter_test:
     sdk: flutter

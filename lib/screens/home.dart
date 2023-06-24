@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
+import 'package:badges/badges.dart';
 
 class Home extends StatefulWidget {
   const Home({super.key});
@@ -122,9 +123,13 @@ class _HomeState extends State<Home> {
                       Padding(
                         padding: const EdgeInsets.all(8.0),
                         child: CircleAvatar(
-                          backgroundColor: Color.fromARGB(255, 241, 238, 238),
-                          child: SvgPicture.asset('assets/icons/Bell.svg'),
-                        ),
+                            backgroundColor: Color.fromARGB(255, 241, 238, 238),
+                            child: Badge(
+                              position:
+                                  BadgePosition.topEnd(top: -20, end: -20),
+                              badgeContent: Text('3'),
+                              child: SvgPicture.asset('assets/icons/Bell.svg'),
+                            )),
                       ),
                     ],
                   ),
